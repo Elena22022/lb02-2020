@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Schriften*/
+
+nav, p, a, h1, h2, h3, h4, h5, h6, li, main, div, .rechner {
+  font-family: Helvetica, Arial, "sans-serif";
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+li, p, ol, ul {
+	font-weight: lighter;
+}
+
+h1 {
+  color: #930020;
+}
+
+h3 {
+  color: #004f09;
+}
+
+h4, h5, h6 {
+  color: #212121;
+}
+
+/*Navigation*/
+nav > ul {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+} 
+
+nav li {
+  margin: 0.5em;
+  padding: 0;
+  font-size: 1.5rem;  
+  flex: 1 1 0%;  
+}
+
+@media (min-width: 45em) {
+  nav > ul {	
+    flex-direction: row;  
+  }
+  nav li {
+    flex: 1;
+	font-size: 1em;
+  }  
+}
+
+nav a {
+  display: block;
+  padding: 0.4em;
+  text-decoration: none; 
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #930020;
+  border-radius: 10px;
+  color: white; 
+  background-color: #930020; 
+  transition: all .25s ease-in;	  
+}
+	
+nav a:focus,
+nav a:hover {    
+  color: #930020; 
+  background-color: #fff;
+}	
+
+nav #current {
+  background-color: #fff;
+  color: #930020;
+}
+
+nav .submenu { 
+  visibility: hidden;  
+  height: 0;
+  z-index: 1000; 
+}
+nav .submenu li { 
+  display: block;
+}
+ 
+nav li:hover .submenu,
+nav li:active .submenu, 
+nav li:focus .submenu  {
+  visibility: visible;
+  height: auto;
+}
+nav li:focus-within .submenu  { 
+  visibility: visible;
+  height: auto;
+}
+
+.button_uu {
+  background-color: #930020;
+  color: #fff;
+  font-size: 17px;
+  margin-left: 0;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.button_ebg {
+  background-color: #930020;
+  color: #fff;
+  font-size: 17px;
+  margin-left: -20px;
+  height: 40px;
+  width: 225px;
+  border-radius: 10px;
+}
+
+.button_sp {
+  background-color: #930020;
+  color: #fff;
+  font-size: 17px;
+  margin-left: 20px;
+  height: 40px;
+  width: 105px;
+  border-radius: 10px;
+}
+
+/*Logo*/
+.logo {
+  width: 175px;
+	height: 60px;
+	margin: 7px 35px 0 0;
+	float: left;
+}
+
+/*Projekte*/
+.progress {
+  background-color: #ccc;
+  border-radius: 7px;
+  margin-left: 20px;
+  width: 400px;
+  height: 22px;
+}
+
+.progress-bar {
+  background-color: #930020;
+  color: #fff;
+  border-radius: 7px;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+}
+
+
+/*Statuten*/
+.vorstand li {
+  list-style-type: none;
+}
+
+.vorstand li:before {
+  content: " - ";
+}
+
+ /*Wertenrechner*/
+.rechner {
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+.box {
+  width: auto;
+  padding: 10px 25px 20px;
+  margin: 0px 25px 25px 20px;
+  background-color: #930020;
+}
+
+main {
+  width: 90%;
+  padding: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
+/*Tabelle*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
+  grid-row-gap: 20px;
+  grid-column-gap: 0;
+}
+
+.grid-item {
+  background-color: rgb(255, 255, 255);
+  color: #930020;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*Kontaktformular*/
+.phone {
+  max-width: 375px;
+}
+
+.button {
+  width: min-content;
+}
+
+.lh-condensed { line-height: 1.25; }
+
+/*Footer*/
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: white;
+  padding: 10px;
+  grid-row-gap: 20px;
+  grid-column-gap: 0;
+}
+
+.adresse, .bild01, .bild02, .bild03, .text {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.tel, .mail {
+  color:blue;
+  text-decoration:underline;
+}
+
+/*Bilder*/
+.img {
+  max-width: 400px;
+}
+
+.right {
+  float: right;
+  margin: 100px 25px 25px 50px;
+}
+
+.left {
+  float: left;
+  margin: 20px 50px 25px 25px;
+}
+
+.bild09 {
+  margin-bottom: 85px;
+  margin-right: 55px;
+}
+
+.bild14 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/*Bildgalerie*/
+.carousel-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slide {
+  background-color: #ddd;
+}
+
+/*Top-Button*/
+.back-to-top {
+  display: block;
+  background: #930020;
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+  bottom:20px;
+  right:20px;
+  padding:1em;
+  border-radius: 10px;
+ }

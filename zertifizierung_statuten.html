@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Zeritfizierung und Statuten</title>
+
+	<link rel="stylesheet" href="./CSS_JS/styles.css">
+	<script type="text/javascript" src="./CSS_JS/scripts.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			// Der Button wird mit JavaScript erzeugt und vor dem Ende des body eingebunden.
+			var back_to_top_button = ['<a href="#top" class="back-to-top">Nach oben</a>'].join("");
+			$("body").append(back_to_top_button)
+
+			// Der Button wird ausgeblendet
+			$(".back-to-top").hide();
+
+			// Funktion für das Scroll-Verhalten
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) { // Wenn 100 Pixel gescrolled wurde
+						$('.back-to-top').fadeIn();
+					} else {
+						$('.back-to-top').fadeOut();
+					}
+				});
+
+				$('.back-to-top').click(function () { // Klick auf den Button
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+
+	<div class="logo"><a href="./home.html"><img src="./Bilder/Logo_JfK.jpg" height="40"></a></div>
+
+	<nav>
+		<ul id="nav">
+			<li><a href="./home.html">Home</a></li>
+
+			<li tabindex="0"><a id="current" href="./ueber_uns.html">Über uns</a>
+				<ul class="submenu nav">
+					<li><a tabindex="0" href="./ein_bisschen_geschichte.html">Ein bisschen Geschichte</a></li>
+					<li><a id="current" tabindex="0" href="./zertifizierung_statuten.html">Zertifizierung und Statuten</a></li>
+				</ul>
+			</li>
+
+			<li><a href="./projekte.html">Projeke</a></li>
+			<li><a href="./spenden.html">Spenden</a></li>
+			<li><a href="./kontakt.html">Kontakt</a></li>
+		</ul>
+	</nav>
+
+	<img class="bild010 img right" src="./Bilder/Zertifizierung_und_Statuten/school95-2.jpg"
+		alt="Afrikanische Kinder welche in einem Kindergarten Klassenzimmer sitzen"><br>
+
+	<h1>Zertifizierung</h1>
+	<p>Wir verzichten, weil wir die Spendengelder den Kindern und nicht der Bürokratie zukommen lassen!</p>
+	<p>Für die Zertifizierung müssten wir folgende Beträge bezahlen:</p>
+	<p>CHF 500.- für eine Vorabklären +<br>
+		CHF 5’000.- für die Zertifizierung +<br>
+		CHF 1’500.- für die jährliche Wiederzertifizierung</p><br>
+
+	<p>Mit diesem Geld können wir aber mindestens
+		<ul>
+			<li>17 Kindern die Grundschulausbildung finanzieren oder</li>
+			<li>6 Kindern die Universität finanzieren oder</li>
+			<li>40 Betten mit Matratze und Moskitonetze kaufen oder</li>
+			<li>180 Esspakete kaufen oder</li>
+			<li>einen Teil der Schulbücher für die Kinder finanzieren, damit sie sich Weiterbilden können.</li>
+		</ul>
+	</p><br>
+
+
+	<h1>Statuten</h1>
+	<h3>Vereinsstatuten von Jugend für Kenia</h3>
+
+	<h5>
+		<ol>
+			<li>
+				<h4>Name und Sitz des Vereins</h4>
+			</li>
+			<p>Unter dem Namen Jugend für Kenia besteht ein Verein im Sinne von Art. 60 ff. des schweizerischen
+				Zivilgesetzbuches. Der Sitz befindet sich in 8604 Volketswil am Neuguetweg 18, wo die Verwaltung der
+				Vereinsgeschäfte geführt wird.</p><br>
+
+			<li>
+				<h4>Vereinszweck</h4>
+			</li>
+			<p>
+				<ol type="a">
+					<li> Der Verein ist einen Non-Profit-Organisation und steht in Kilifi, Kenia Kindern, Jugendlichen
+						und deren
+						Familien bei, die in extrem schwierigen Verhältnissen aufwachsen. Der Verein bezweckt:</li>
+					<li>die Förderung der Schulbildung von Kindern</li>
+					<li>die Unterstützung von hilfsbedürftigen Kindern und deren Familien</li>
+					<li>die Aufbringung von finanziellen Mitteln und die Unterstützung von Selbsthilfeaktivitäten für
+						die Kinder
+						und deren Familien</li>
+					<li>Für diese Zwecke ist die Zusammenarbeit mit der lokalen NGO-Institution GAPEKA CHILDREN’S HOPE
+						CENTRE –
+						Kenya rechtlich geregelt.</li>
+				</ol>
+			</p><br>
+
+			<li>
+				<h4>Mittel zur Erreichung des Vereinszwecks</h4>
+				<h5>Als ideelle Mittel dienen:</h5>
+			</li>
+			<p>
+				<ol type="a">
+					<li>Vorträge;</li>
+					<li>Versammlungen;</li>
+					<li>Diskussionsveranstaltungen;</li>
+					<li>Diskussionsveranstaltungen;</li>
+					<li>Organisieren eines Schulbetriebes in Kenia, insbesondere im Rahmen des Vereins Gapeka vor Ort
+					</li>
+					<li>Organisieren von Projekten in Dritte-Welt-Ländern, welche zur Erzielung des Vereinszwecks dienen
+					</li>
+				</ol>
+				<h5>Die erforderlichen materiellen Mittel sollen aufgebracht werden durch</h5>
+				<ol type="a" start="7">
+					<li>Mitgliedsbeiträge;</li>
+					<li>Spenden, Sammlungen, Vermächtnisse, Schenkungen;</li>
+					<li>sonstige Zuwendungen (Sponsoreneinnahmen, Subventionen, öffentliche Gelder, etc.);</li>
+					<li>Beiträge für Patenschaften</li>
+					<li>Abhaltung von Kursen und Erteilung von Unterricht zur Unterstützung der Bildung von Menschen,
+						insbesondere
+						in Dritte-Welt-Ländern.</li>
+				</ol>
+			</p><br>
+
+			<li>
+				<h4>Mitgliederschaft</h4>
+			</li>
+			<p>
+				<ol type="a">
+					<li>der Mitgliedsbeitrag für ordentliche und außerordentliche Mitglieder beträgt derzeit CHF 30.00
+						pro Jahr;
+					</li>
+					<li>Allgemeine Spenden (wie auch die Übernahme von Patenschaften) gelten nicht als Mitgliedschaft;
+					</li>
+					<li>Beiträge sind für das gesamte Kalenderjahr im Voraus zu entrichten.</li>
+					<li>Die Mitgliederbeiträge werden für die Verwaltungskosten genutzt, damit die Spendengelder ohne
+						Abzüge bei
+						den Kindern ankommen.</li>
+				</ol>
+				<h5>Erwerb der Mitgliedschaft</h5>
+				<ol type="a" start="5">
+					<li>Über die Aufnahme von ordentlichen Mitgliedern entscheidet der Vorstand aufgrund eines
+						schriftlichen
+						Antrags mit einfacher Stimmenmehrheit. Die Nichtannahme der Beitrittserklärung bzw. des
+						Ansuchens als
+						ordentliches Mitglied bedarf keiner Begründung.</li>
+					<li>Die bloße Einzahlung eines Mitgliedsbeitrages ist als Antrag auf Aufnahme als außerordentliches
+						Mitglied
+						zu verstehen.</li>
+				</ol>
+				<h5>Beendigung der Mitgliedschaft</h5>
+				<ol type="a" start="7">
+					<li>Die Mitgliedschaft erlischt durch Tod (bei juristischen Personen durch Verlust der
+						Rechtspersönlichkeit),
+						durch freiwilligen Austritt und durch Ausschluss</li>
+					<li>Der freiwillige Austritt kann jederzeit erfolgen</li>
+					<li>Der Vorstand ist berechtigt ein Mitglied wegen grober Verletzung der Mitgliedspflichten und
+						wegen
+						unehrenhaften Verhaltens vom Verein auszuschließen</li>
+					<li>Bei Austritt können die Mitgliedsbeiträge nicht anteilsmäßig zurückgefordert werden</li>
+					<li>Bei Beendigung der Mitgliedschaft erlöschen sämtliche Mitgliederrechte und allfällige
+						Vereinsfunktionen
+					</li>
+					<li>Ausscheidende Mitglieder haben keinen Anspruch auf das Vereinsvermögen</li>
+					<li>Das Vereinsjahr beginnt mit dem 1. Januar und endet am 31. Dezember</li>
+				</ol>
+				<h5>Rechte und Pflichten der Mitglieder</h5>
+				<ol type="a" start="14">
+					<li>alle Mitglieder sind berechtigt, an öffentlichen Veranstaltungen des Vereins teilzunehmen</li>
+					<li>ordentliche Mitglieder haben das aktive und passive Wahlrecht in der Generalversammlung</li>
+					<li>alle Mitglieder sind angehalten, die Interessen des Vereins nach Kräften zu fördern</li>
+					<li>alle Mitglieder sind verpflichtet, alles zu unterlassen, was dem Ansehen und dem Zweck des
+						Vereins schaden
+						könnte</li>
+					<li>alle Mitglieder sind zur pünktlichen Bezahlung der Mitgliedsbeiträge in der vom Vorstand
+						beschlossenen
+						Höhe verpflichtet</li>
+				</ol>
+			</p><br>
+
+			<li>
+				<h4>Organisation</h4>
+			</li>
+			<p>
+				<h5>Die Organe des Vereins sind:</h5>
+				<ol type="a">
+					<li>die Generalversammlung der Mitglieder</li>
+					<li>der Vorstand</li>
+					<li>die RechnungsrevisorInnen</li>
+				</ol>
+				<h5>Die Generalversammlung:</h5>
+				<p>Die ordentliche GV findet einmal im Jahr statt. Sie wird vom Vorstand einberufen. Einladung und
+					Traktanden
+					müssen 14 Tage vor der Versammlung den Mitgliedern verschickt werden. Eine ausserordentliche GV kann
+					auf
+					Antrag des Vorstandes oder von 1/5 der Mitglieder einberufen werden.</p>
+				<h5>Der GV sind folgende Kompetenzen vorbehalten:</h5>
+				<ol type="a" start="4">
+					<li>Bestellung des Vorstandes und Wahl der Präsidentin/des Präsidenten</li>
+					<li>Genehmigung des Jahresberichts und der Jahresrechnung</li>
+					<li>Änderung der Statuten</li>
+					<li>Festsetzung der Mitgliederbeiträge</li>
+					<li>Genehmigung der Leitlinien</li>
+					<li>Kenntnisnahme neuer Projekte</li>
+				</ol>
+				<p>Die GV ist unabhängig von der Anzahl der anwesenden Mitgliedern beschlussfähig. Jedes Mitglied hat
+					eine
+					Stimme. Von den anwesenden Mitgliedern ist für Wahlen und Beschlüsse das einfache Mehr erforderlich,
+					für
+					Statutenänderungen 2/3 der anwesenden Mitglieder.</p>
+			</p>
+			<h5>Der Vorstand:</h5>
+			<p>Der Vorstand besteht aus mindestens 2 Mitgliedern. Die Amtsdauer beträgt 4 Jahre, nach deren Ablauf sind
+				sämtliche Mitglieder des Vorstandes wieder wählbar. Mit Ausnahme des Präsidiums konstituiert sich der
+				Vorstand
+				selbst. Dem Vorstand werden folgende Kompetenzen eingeräumt:</p>
+			<ul class="vorstand">
+				<li>Vertretung des Vereins nach aussen</li>
+				<li>Prüfung von neuen Projekten</li>
+				<li>Überwachung der laufenden Projekte</li>
+				<li>Führung der Vereinsrechnung</li>
+				<li>Budgetierung</li>
+				<li>Verfassen von Jahresbericht und Jahresabschluss zuhanden der GV</li>
+				<li>Vorbereiten und Durchführen von Versammlungen</li>
+				<li>Führung sämtlicher Geschäfte des Vereins, insbesondere Vollzug der GV-Beschlüsse</li>
+				<li>Bildung und Koordination von Arbeitsgruppen zur Entlastung des Vorstandes (Prüfung und Realisierung
+					von
+					Projekten, Finanzbeschaffung, Kontrollbesuche, Schaffung und permanente Überprüfung von Leitlinien
+					etc.)</li>
+			</ul>
+			<p>Die rechtsverbindliche Unterschrift für den Verein führt der/die Präsidentln oder der/die Vizepräsidentln
+				zusammen mit einem Vorstandsmitglied. Der Vorstand kann den Kreis der Unterschriftsberechtigten
+				erweitern, wenn
+				dies dem Vereinsziel dient. Beschlüsse des Vorstandes erfolgen mit dem einfachen Mehr der Anwesenden.
+			</p><br>
+
+			<li>
+				<h4>Die Rechnungsrevision</h4>
+			</li>
+			<p>Zur Prüfung der Jahresrechnung wird von der Generalversammlung ein/e unabhängige/r, fachlich befähigte/r
+				Revisor/in gewählt. Er/sie hat zuhanden der Generalversammlung über seinen/ihren Befund einen
+				schriftlichen
+				Bericht zu erstatten. Seine/ihre Amtsdauer beträgt vier Jahre; er/sie ist wieder wählbar.</p><br>
+
+			<li>
+				<h4>Auflösung</h4>
+			</li>
+			<p>Für die Auflösung des Vereins ist die Zustimmung von 2/3 der anwesenden Vereinsmitglieder an der
+				Generalversammlung erforderlich. In diesem Falle kommt das Vereinsvermögen einer von der
+				Generalversammlung
+				bestimmten, den Leitlinien entsprechenden Institution mit gleichem oder ähnlichem Zwecke zugute. Eine
+				Verteilung
+				des Restvermögens unter die Vereinsmitglieder ist ausgeschlossen.</p><br>
+
+			<li>
+				<h4>Schlussbestimmungen</h4>
+			</li>
+			<p>Diese Statuten sind mit der Annahme durch die Generalversammlung vom 31.8.2016 in Kraft gesetzt worden.
+			</p>
+			<br><br>
+
+			<p><i>Volketswil, 31.08.2016</i></p>
+		</ol><br>
+
+</body><br><br>
+<footer>
+	<hr>
+	<div class="footer">
+		<div class="adresse">KONTAKTIERE UNS<br>Verein Jugend für Kenia<br>Neuguetweg 18<br>8604 Volketswil<br><a
+				class="tel" href="tel:+41798086563">+41 79 808 65 63</a><br><a class="mail"
+				href="mailto:info@jugendfuerkenia.ch">info@jugendfuerkenia.ch</a></div>
+		<div class="bild01 fb"><a href="https://www.facebook.com/JugendfuerKenia/" target="_blank"><img src="./Bilder/Footer/fb.png"
+					height="40"></a></div>
+		<div class="bild02 ig"><a href="https://www.instagram.com/jugendfuerkenia/" target="_blank"><img src="./Bilder/Footer/ig.png"
+					height="43"></a></div>
+		<div class="bild03 wa"><a href="https://wa.me/41798086563" target="_blank"><img src="./Bilder/Footer/wa.png" height="45"></a>
+		</div>
+		<div class="text">Wir sind eine Hilfsorganisation von Jugendlichen mit ihren Eltern, ihren Lehrpersonen und
+			ihren
+			Leitern und
+			unterstützen die Kinder der Kilifi Vonwald School in Kenia. Werde auch DU Teil davon, denn deine Mitwirkung
+			hat
+			grosse AUSWIRKUNG!</div>
+</footer>
+</html>

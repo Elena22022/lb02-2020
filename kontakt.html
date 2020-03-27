@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./CSS_JS/style_kontakt.css">
+    <link rel="stylesheet" type="text/css" href="./CSS_JS/styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+        <script src="./CSS_JS/script_kontakt.js"></script>
+        <script src="./CSS_JS/scripts.js"></script>
+<script>
+ 
+  </script>
+
+</head>
+
+<body>
+
+    <div class="logo"><a href="./home.html"><img src="./Bilder/Logo_JfK.jpg" height="40"></a></div>
+
+    <nav>
+        <ul id="nav">
+            <li><a href="./home.html">Home</a></li>
+
+            <li tabindex="0"><a href="./ueber_uns.html">Über uns</a>
+                <ul class="submenu nav">
+                    <li><a tabindex="0" href="./ein_bisschen_geschichte.html">Ein bisschen Geschichte</a></li>
+                    <li><a tabindex="0" href="./zertifizierung_statuten.html">Zertifizierung und Statuten</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./projekte.html">Projeke</a></li>
+            <li><a href="./spenden.html">Spenden</a></li>
+            <li><a id="current" href="./kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <img class="bild15 img right" src="./Bilder/Kontakt/school12.jpg" alt="Afrikanisches Mädchen am Posieren"
+        width="300px"><br>
+
+    <h1>Kontakt</h1>
+
+    <div class="container contact">
+        <h3>Kontaktiere uns</h3>
+        <form class="needs-validation form-right" novalidate>
+
+            <div class="row form-group">
+                <label for="firstName" class="col-sm-2 col-form-label">Vorname</label>
+                <input type="text" class="form-control firstName col-sm-4" id="firstName" placeholder="Hans" value=""
+                    required>
+                <div class="invalid-feedback">
+                    Vorname ist obligatiorisch.
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label for="lastName" class="col-sm-2 col-form-label">Nachname</label>
+                <input type="text" class="form-control firstName col-sm-4" id="lastName" placeholder="Mustermann"
+                    value="" required>
+                <div class="invalid-feedback">
+                    Nachname ist obligatiorisch.
+                </div>
+            </div>
+
+
+            <div class="row form-group">
+                <label for="phone" class="col-sm-2 col-form-label">Telefon <span
+                        class="text-muted">(Optional)</span></label>
+                <input type="numbers" class="form-control firstName col-sm-4" id="phone" placeholder="+41 12 345 67 89"
+                    value="">
+                <div class="invalid-feedback">
+                    Bitte geben sie eine gültige Telefonnummer ein.
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <input type="email" class="form-control firstName col-sm-4" id="email" placeholder="hans@mustermann.com"
+                    value="" required>
+                <div class="invalid-feedback">
+                    Bitte geben sie eine gültige Email Adresse ein.
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="message" class="col-sm-2 col-form-label">Nachricht</label>
+                <!--<textarea rows="4" <input type="text" class="form-control message" id="message" placeholder="" value=""
+                                      required></textarea>-->
+                <textarea rows="4" id="message" class="form-control firstName col-sm-4" required></textarea>
+                <div class="invalid-feedback">
+                    Bitte geben sie eine Nachricht ein.
+                </div>
+            </div>
+            <div class="row" style="margin-left: 176px;">
+                <fieldset id="FIELD">
+                  <legend>Anliegen </legend>
+                  <label for="radio-1">Spenden</label>
+                  <input type="radio" name="radio-1" id="radio-1">
+                  <label for="radio-2">Projekte</label>
+                  <input type="radio" name="radio-1" id="radio-2">
+                  <label for="radio-3">Mehr erfahren</label>
+                  <input type="radio" name="radio-1" id="radio-3">
+                </fieldset>
+              </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block button" onclick="getInputs()" type="submit">Senden</button>
+        </form>
+    </divc>
+    </div><br>
+
+
+</body>
+<br><br>
+<footer>
+    <hr>
+    <div class="footer">
+        <div class="adresse">KONTAKTIERE UNS<br>Verein Jugend für Kenia<br>Neuguetweg 18<br>8604 Volketswil<br><a
+                class="tel" href="tel:+41798086563">+41 79 808 65 63</a><br><a class="mail"
+                href="mailto:info@jugendfuerkenia.ch">info@jugendfuerkenia.ch</a>
+        </div>
+        <div class="bild01 fb"><a href="https://www.facebook.com/JugendfuerKenia/" target="_blank"><img
+                    src="./Bilder/Footer/fb.png" height="40"></a></div>
+        <div class="bild02 ig"><a href="https://www.instagram.com/jugendfuerkenia/" target="_blank"><img
+                    src="./Bilder/Footer/ig.png" height="43"></a></div>
+        <div class="bild03 wa"><a href="https://wa.me/41798086563" target="_blank"><img src="./Bilder/Footer/wa.png"
+                    height="45"></a>
+        </div>
+        <div class="text">Wir sind eine Hilfsorganisation von Jugendlichen mit ihren Eltern, ihren Lehrpersonen und
+            ihren
+            Leitern und
+            unterstützen die Kinder der Kilifi Vonwald School in Kenia. Werde auch DU Teil davon, denn deine Mitwirkung
+            hat
+            grosse AUSWIRKUNG!
+        </div>
+</footer>
+
+</html>
