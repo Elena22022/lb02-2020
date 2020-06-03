@@ -2,94 +2,115 @@
 <html lang="de">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Spenden</title>
+    <meta charset="UTF-8">
+    <title>Spenden</title>
 
-  <link rel="stylesheet" href="./CSS_JS/styles.css">
-  <script type="text/javascript" src="./CSS_JS/scripts.js"></script>
+    <link rel="stylesheet" href="./CSS_JS/styles.css">
+    <script type="text/javascript" src="./CSS_JS/scripts.js"></script>
+    <script type="text/javascript" src="CSS_JS/push.js"></script>
+    <script type="text/javascript" src="CSS_JS/pull.js"></script>
 
 </head>
 
-<body>
+<div class="logo"><a href="./home.html"><img src="./Bilder/Logo_JfK.jpg" height="40"></a></div>
 
-  <div class="logo"><a href="./home.html"><img src="./Bilder/Logo_JfK.jpg" height="40"></a></div>
-
-  <nav>
+<nav>
     <ul id="nav">
-      <li><a href="./home.html">Home</a></li>
+        <li><a href="./home.html">Home</a></li>
 
-      <li tabindex="0"><a href="./ueber_uns.html">Über uns</a>
-        <ul class="submenu nav">
-          <li><a tabindex="0" href="./ein_bisschen_geschichte.html">Ein bisschen Geschichte</a></li>
-          <li><a tabindex="0" href="./zertifizierung_statuten.html">Zertifizierung und Statuten</a></li>
-        </ul>
-      </li>
+        <li tabindex="0"><a href="./ueber_uns.html">Über uns</a>
+            <ul class="submenu nav">
+                <li><a tabindex="0" href="./ein_bisschen_geschichte.html">Ein bisschen Geschichte</a></li>
+                <li><a tabindex="0" href="./zertifizierung_statuten.html">Zertifizierung und Statuten</a></li>
+            </ul>
+        </li>
 
-      <li><a href="./projekte.html">Projeke</a></li>
-      <li><a id="current" href="./spenden.html">Spenden</a></li>
-      <li><a href="./kontakt.html">Kontakt</a></li>
+        <li><a href="./projekte.html">Projeke</a></li>
+        <li><a id="current" href="./spenden.html">Spenden</a></li>
+        <li><a href="./kontakt.html">Kontakt</a></li>
     </ul>
-  </nav>
+</nav>
 
-  <br>
-  <h1>Spenden</h1>
-  <h3>Wertrechner</h3>
-  <main>
+<br>
+<h1>Spenden</h1>
+<h3>Wertrechner</h3>
+<main>
     <div class="box">
-      <p class="rechner">Betrag</p>
-      <p>
-        <input style="text-align: right;" type="numbers" id="fromBetrag" size="15" value="100.00">
-        <select id="fromDevisen">
-          <option value="chf">CHF</option>
-          <option value="eur">EUR</option>
-        </select><br>
-        <button type="submit" id="berechnen" onclick="calc()">Berechnen</button>
-      </p>
+        <p class="rechner">Betrag</p>
+        <p>
+            <input style="text-align: right;" type="numbers" id="fromBetrag" size="15" value="100.00">
+            <select id="fromDevisen">
+                <option value="chf">CHF</option>
+                <option value="eur">EUR</option>
+            </select><br>
+            <button type="submit" id="berechnen" onclick="calc()">Berechnen</button>
+        </p>
     </div>
     <div class="box">
-      <p class="rechner">Produkt</p>
-      <p>
-        <input style="text-align: right;" type="numbers" id="toBetrag" size="15" value="">
-        <select id="toDevisen">
-          <option value="bett">Bett</option>
-          <option value="buch">Schulbuch</option>
-          <option value="lampe">Solarlampe</option>
-          <option value="essen">Essenspaket</option>
-          <option value="kleider">Kleiderbox</option>
-          <option value="stuhl">Stuhl</option>
-        </select>
-      </p>
+        <p class="rechner">Produkt</p>
+        <p>
+            <input style="text-align: right;" type="numbers" id="toBetrag" size="15" value="">
+            <select id="toDevisen">
+                <option value="bett">Bett</option>
+                <option value="buch">Schulbuch</option>
+                <option value="lampe">Solarlampe</option>
+                <option value="essen">Essenspaket</option>
+                <option value="kleider">Kleiderbox</option>
+                <option value="stuhl">Stuhl</option>
+            </select>
+        </p>
     </div>
-  </main>
-  <img class="bild14 img right" src="./Bilder/Spenden/school39.jpg" alt="Afrikanische Kinder beim Mittagessen"
-    width="300px"><br>
+</main>
+<img class="bild14 img right" src="./Bilder/Spenden/school39.jpg" alt="Afrikanische Kinder beim Mittagessen"
+     width="300px"><br>
 
-  <h3>Hier kannst DU spenden. Mitwirken und grosses bewirken</h3>
-  <ul>
+<h3>Hier kannst DU spenden. Mitwirken und grosses bewirken</h3>
+<ul>
     <li>Wir suchen Schulklassen die mit ihren Klassenprojekten die Kinder der Kilifi Vonwald School unterstützen</li>
     <li>Wir suchen Kinder und Jugendliche, die zusammen mit Ihren Eltern Beiträge spenden</li>
     <li>Wir suchen Sportvereine, die mit verschiedenen Aktivitäten Spenden sammeln</li>
     <li>Wir suchen Unternehmer, die monatliche oder einmalige Beiträge spenden.</li>
-  </ul><br><br><br>
+</ul>
+<br><br><br>
 
+<h3>Spender:</h3>
+<p>Elena Schmid, Yerinia Martinelli</p>
 
-</body><br><br><br><br>
+<h3>Registriere dich</h3>
+<div class="registration">
+    <span class="nachname">Nachname: <input type="text" id="nachname" placeholder="Mustermann"></span><br>
+    <span class="vorname">Vorname: <input type="text" id="vorname" placeholder="Max"></span><br>
+    <span class="telefon">Telefon-Nummer: <input type="tel" id="telefon" placeholder="+41 12 345 67 89"></span><br>
+    <span class="email">Email-Adresse: <input type="email" id="email" placeholder="max@mustermann.ch"></span><br>
+    <span class="passwort">Passwort: <input type="password" id="password"></span>
+    <button class="button button_r">Registrieren</button>
+</div>
+
+</body>
+<br><br><br><br>
 <footer>
-  <hr>
-  <div class="footer">
-    <div class="adresse">KONTAKTIERE UNS<br>Verein Jugend für Kenia<br>Neuguetweg 18<br>8604 Volketswil<br><a
-        class="tel" href="tel:+41798086563">+41 79 808 65 63</a><br><a class="mail"
-        href="mailto:info@jugendfuerkenia.ch">info@jugendfuerkenia.ch</a></div>
-    <div class="bild01 fb"><a href="https://www.facebook.com/JugendfuerKenia/" target="_blank"><img src="./Bilder/Footer/fb.png"
-          height="40"></a></div>
-    <div class="bild02 ig"><a href="https://www.instagram.com/jugendfuerkenia/" target="_blank"><img src="./Bilder/Footer/ig.png"
-          height="43"></a></div>
-    <div class="bild03 wa"><a href="https://wa.me/41798086563" target="_blank"><img src="./Bilder/Footer/wa.png" height="45"></a></div>
-    <div class="text">Wir sind eine Hilfsorganisation von Jugendlichen mit ihren Eltern, ihren Lehrpersonen und ihren
-      Leitern und
-      unterstützen die Kinder der Kilifi Vonwald School in Kenia. Werde auch DU Teil davon, denn deine Mitwirkung
-      hat
-      grosse AUSWIRKUNG!</div>
+    <hr>
+    <div class="footer">
+        <div class="adresse">KONTAKTIERE UNS<br>Verein Jugend für Kenia<br>Neuguetweg 18<br>8604 Volketswil<br><a
+                class="tel" href="tel:+41798086563">+41 79 808 65 63</a><br><a class="mail"
+                                                                               href="mailto:info@jugendfuerkenia.ch">info@jugendfuerkenia.ch</a>
+        </div>
+        <div class="bild01 fb"><a href="https://www.facebook.com/JugendfuerKenia/" target="_blank"><img
+                src="./Bilder/Footer/fb.png"
+                height="40"></a></div>
+        <div class="bild02 ig"><a href="https://www.instagram.com/jugendfuerkenia/" target="_blank"><img
+                src="./Bilder/Footer/ig.png"
+                height="43"></a></div>
+        <div class="bild03 wa"><a href="https://wa.me/41798086563" target="_blank"><img src="./Bilder/Footer/wa.png"
+                                                                                        height="45"></a></div>
+        <div class="text">Wir sind eine Hilfsorganisation von Jugendlichen mit ihren Eltern, ihren Lehrpersonen und
+            ihren
+            Leitern und
+            unterstützen die Kinder der Kilifi Vonwald School in Kenia. Werde auch DU Teil davon, denn deine Mitwirkung
+            hat
+            grosse AUSWIRKUNG!
+        </div>
 </footer>
+
 
 </html>

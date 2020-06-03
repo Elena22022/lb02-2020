@@ -1,3 +1,4 @@
+/*
 // JavaScript Document
 //Wertenrechner
 const Bett = "bett";
@@ -85,3 +86,4 @@ $(function() {
 $(function() {
   $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 });
+*/
